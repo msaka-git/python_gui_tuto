@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import *
 import sys
 
 def pencere():
+
     app=QApplication(sys.argv)
     window = QWidget()
     yazi=QLabel(window)
@@ -17,5 +18,7 @@ def pencere():
     window.show()
     sys.exit(app.exec())
 
+
 if __name__ == "__main__":
     pencere()
+
