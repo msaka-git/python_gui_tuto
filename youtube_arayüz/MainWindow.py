@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
         self.btn_open = QtWidgets.QPushButton(self.centralwidget)
         self.btn_open.setGeometry(QtCore.QRect(110, 140, 141, 51))
         self.btn_open.setObjectName("btn_open")
-
+        self.btn_open.clicked.connect(act1)
         self.btn_open.clicked.connect(self.openWindow)
     
         
@@ -49,6 +49,8 @@ class Ui_MainWindow(object):
         self.btn_open.setText(_translate("MainWindow", "Open Window"))
         self.label.setText(_translate("MainWindow", "Click To Open Window"))
 
+def act1():
+    print("Birinci butona tıklandı")
 
 if __name__ == "__main__":
     import sys
